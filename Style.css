@@ -2,3 +2,51 @@ body {
    background-color: #2B2828;
 
 }
+
+/*Banner at the Top */
+
+.anibanner{
+        width: 100%;
+        height: 350px;
+}
+
+/* Navigation Bar */
+
+#logo1 {
+    color: white;
+    text-align: right;
+    
+
+}
+.navbar{
+
+    display: flex;
+    background-color: #400C84;
+    margin: 0px;  
+    padding: 0 90px;
+    width: 100%;    
+             
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;    
+    list-style-type: none;
+
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+        
+}
+
+.navbar a:hover{
+    color: #cc93c0;
+    transition: 0.3;
+}
+
