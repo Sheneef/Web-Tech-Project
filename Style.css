@@ -24,18 +24,14 @@ body {
     display: flex;
     background-color: #400C84;
     margin:0px;  
-    padding:0 90px;
-    position:fixed;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-          
-             
+                      
 }
 
 .navbar ul {
-    display: flex;
-      
+    display: flex;      
     list-style-type: none;
     flex-wrap: nowrap;
 
@@ -84,5 +80,23 @@ body {
   right: 300px;
 
 }
+
+
+
+
+
+/* Contact Us form */
+
+#contactinfo{
+    background-color: bisque;
+    margin: 50px;
+    padding: 50px;
+}
+
+
+
+
+
+
 
 
