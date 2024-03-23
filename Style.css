@@ -83,7 +83,7 @@ body {
 
 
 
-/* Contact Us form */
+/* Contact Us form Styling */
 
 #contactinfo{
     /* background: radial-gradient(circle, rgba(87,49,140,1) 42%, rgba(153,109,210,1) 52%); */
@@ -120,13 +120,20 @@ body {
     border-radius: 30px;
     padding: 15px 20px;
     margin: 10px ;
+    width: 150%;
     
 }
 
-/* .messagebox {
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-} */
+.messagebox {
+    width: 600px;
+    margin-left: 300px;
+    
+}
+
+.messagebox textarea{
+    width: 100%;
+  height: 330px;
+    resize: none;
+}
 
 
