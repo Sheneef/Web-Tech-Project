@@ -86,15 +86,47 @@ body {
 /* Contact Us form */
 
 #contactinfo{
-    background-color: bisque;
+    /* background: radial-gradient(circle, rgba(87,49,140,1) 42%, rgba(153,109,210,1) 52%); */
     margin: 50px;
-    padding: 50px;
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    text-align: center;
+    color: white;
+    
 }
 
 
 
+.formhead{
+    margin-bottom: 50px;
+    padding:0, 30px;
+}
 
+.contform{
+    display: flex;
+    text-align:left ;
+    margin: 0 auto;
+    color: white;
+    max-width: 1200px;
+    
+}
 
+.contform label{
+    display:block;
+    margin:20px 10px;
+    
+}
 
+.contform input {
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin: 10px ;
+    
+}
+
+/* .messagebox {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+} */
 
 
