@@ -85,6 +85,50 @@ body {
 
 
 
+/* Home Page Styling */
+
+
+
+
+        /* Carousel  */
+#carousel{
+    margin: 20px auto;
+    background:#593688;
+    padding: 80px;
+    color: white;
+}
+
+
+
+        /* Popular Anime Section  */
+.Sectpop{
+    display: flex;
+    margin: 30px 200px;
+    background:#593688;
+    padding: 80px;
+    color: white;
+
+}
+
+        /* New Recomendation Anime Section  */
+
+         /* Aside Banner to the Left  */
+
+.welcomSide{
+   
+}
+
+.insidewel{
+  
+}
+
+          /* Aside banner to the Right   */
+
+           /* Footer  */
+
+
+
+
 /* Contact Us form Styling */
 
 #contactinfo{    
