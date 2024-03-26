@@ -93,7 +93,10 @@ body {
         /* Carousel  */
 #carousel{
     margin: 20px auto;
-    background:#593688;
+    /* background:#593688;
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
+
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
     padding: 80px;
     color: white;
 }
@@ -102,54 +105,46 @@ body {
 
         /* Popular Anime Section  */
 .Sectpop{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
     margin: 30px 230px;
-    background:#593688;
-    padding: 100px;
+    /* background:#593688;
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
+
+
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    padding: 50px;
     color: white;
     text-align: center;
+}
+
+.secthead{
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
+    max-width: 1200px;
+    
+}
+.gridpop{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 20px;
+        
 }
 
 .popanime{
     width: 200px;
     height: 250px;
-    
+  
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* New Recomendation Anime Section  */
-
          /* Aside Banner to the Left  */
+
 /* 
 .welcomSide{
    
@@ -161,7 +156,21 @@ body {
 
           /* Aside banner to the Right   */
 
+
+
+        
+#latestReview{
+
+    margin: 30px 230px;
+    background:#593688;
+    padding: 100px;
+    color: white;
+
+}
+
            /* Footer  */
+
+           
 
 
 
@@ -261,6 +270,12 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+
+
+  @media (max-width: 768px) {
+    /* CSS rules for smaller screens */
+}
 
           
          
