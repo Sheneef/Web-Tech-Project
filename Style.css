@@ -29,7 +29,7 @@ body {
     display: flex;
     background-color: #400C84;
     margin:0;  
-    padding: 10px;
+    padding: 5px;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
@@ -40,7 +40,7 @@ body {
     display: flex;      
     list-style-type: none;
     flex-wrap: nowrap;
-
+    
     
 }
 
@@ -109,13 +109,13 @@ body {
     /* background:#593688;
     background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
     background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
-    padding: 50px;
+    padding: 5px;
     color: white;
     text-align: center;
 }
 
 .secthead{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -136,6 +136,32 @@ body {
     height: 250px;
   
 }
+
+                        /* Home page button Code from Gradient with minor modifications  */
+         
+.homebutton {
+    background-image: linear-gradient(to right, #200122 0%, #6f0000  51%, #200122  100%);
+    margin: 60px 30px;
+    padding: 20px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 250px;
+           
+  }
+
+
+
+  .homebutton:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+ 
 
 
 
@@ -162,30 +188,47 @@ body {
 
 }
 
-
-
-
-         /* Aside Banner to the Left  */
-
-/* 
-.welcomSide{
-   
-}
-
-.insidewel{
   
-} */
-
-          /* Aside banner to the Right   */
-
-
-
-        
 
 
            /* Footer  */
 
+#footer{
+    margin: 0;
+    background-color: #400C84;
+    align-items: center;
+}
+
+#footerlogocont{
+    margin: 0 40px;
+}
+
+.footerlogo{
+    width: 120px;
+    height: 80px;
+    
+}
+
+
+.footlist{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    color: white;
+       
+}
+
+.footlist ul li{
+    list-style: none;
+    padding: 10px;
+}
            
+
+
+
+
+
+
 
 
 
@@ -281,7 +324,7 @@ body {
 }
 
 .formsubmit:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center; 
     color: #fff;
     text-decoration: none;
   }
