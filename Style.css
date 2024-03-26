@@ -102,25 +102,62 @@ body {
 
         /* Popular Anime Section  */
 .Sectpop{
-    display: flex;
-    margin: 30px 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 30px 230px;
     background:#593688;
-    padding: 80px;
+    padding: 100px;
     color: white;
-
+    text-align: center;
 }
+
+.popanime{
+    width: 200px;
+    height: 250px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /* New Recomendation Anime Section  */
 
          /* Aside Banner to the Left  */
-
+/* 
 .welcomSide{
    
 }
 
 .insidewel{
   
-}
+} */
 
           /* Aside banner to the Right   */
 
