@@ -103,13 +103,11 @@ body {
 
 
 
-        /* Popular Anime Section  */
+        /* Popular Anime Section and Review Sections  */
 .Sectpop{
     margin: 30px 230px;
     /* background:#593688;
     background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
-
-
     background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
     padding: 50px;
     color: white;
@@ -121,17 +119,17 @@ body {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 2px red;
     font-size: 30px;
     max-width: 1200px;
     
 }
 .gridpop{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    column-gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
         
-}
+} 
 
 .popanime{
     width: 200px;
@@ -139,6 +137,15 @@ body {
   
 }
 
+
+#latestReview{
+
+    margin: 30px 230px;
+    background:#593688;
+    padding: 100px;
+    color: white;
+
+}
 
 
 
@@ -159,14 +166,7 @@ body {
 
 
         
-#latestReview{
 
-    margin: 30px 230px;
-    background:#593688;
-    padding: 100px;
-    color: white;
-
-}
 
            /* Footer  */
 
