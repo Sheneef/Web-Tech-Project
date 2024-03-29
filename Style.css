@@ -137,7 +137,7 @@ body {
   
 }
 
-.pop1 a{
+.poplink{
     text-decoration: none;
     color: white;
 }
@@ -175,11 +175,13 @@ body {
   .animepages{ 
     margin: 10px 30px;
     /* background-color: #a584bd;
-    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
-    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); 
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
+    background:#ece4f5;
     padding: 10px;
-    color: white;
+    color:black;
     display: grid;
+    font-family: 'Times New Roman', Times, serif;
  }
 
 
@@ -192,23 +194,37 @@ body {
   }
 
   .content{
-    margin-right: 40px;
+    margin-left: 40px;
     grid-column: 3;
     grid-row: 1 / span 2;
    
   }
 
-   .content h2{
+   .content h1{
     text-align: center;
     font-size: 30px;
+  }
+
+  .content h2{
+    color: black;
   }
 
   .content p{
     font-size: 20px;
   }
 
-  .paa{
-    margin-bottom: 50px;
+  .tags{
+    margin-bottom: 500px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .insidetags {
+        font-weight: bold;
+        font-size: 22px;
   }
 
 
