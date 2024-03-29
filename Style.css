@@ -137,6 +137,11 @@ body {
   
 }
 
+.pop1 a{
+    text-decoration: none;
+    color: white;
+}
+
                         /* Home page button Code from Gradient with minor modifications  */
          
 .homebutton {
@@ -162,6 +167,49 @@ body {
     text-decoration: none;
   }
  
+
+  
+/* Styling for each anime pages */
+
+
+  .animepages{ 
+    margin: 10px 30px;
+    /* background-color: #a584bd;
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    padding: 10px;
+    color: white;
+    display: grid;
+ }
+
+
+  .pagesimg{
+    width: 300px;
+    height: 400px;  
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin: 20px;
+  }
+
+  .content{
+    margin-right: 40px;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+   
+  }
+
+   .content h2{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .content p{
+    font-size: 20px;
+  }
+
+  .paa{
+    margin-bottom: 50px;
+  }
 
 
 
@@ -328,6 +376,9 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+
+
 
 
 
