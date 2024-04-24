@@ -183,13 +183,6 @@ Chang Images on Hover for the home page section
 
     //Popular section Change images 
 
-imgSololevel.addEventListener('mouseover',function(){
-    imgSololevel.src ="img/sololeveling2.jpg" })   
-imgSololevel.addEventListener('mouseout', function(){
-    imgSololevel.src ="img/sololeveling.jpg"       
-});
-
-
 imgAttack.addEventListener('mouseover',function(){
     imgAttack.src = "img/aot.jpg"
 });
@@ -219,6 +212,12 @@ imgDemonSlay.addEventListener('mouseover',function(){
 });                     
 imgDemonSlay.addEventListener('mouseout', function(){
     imgDemonSlay.src = "img/Demon Slayer.jpg"                        
+});
+
+imgSololevel.addEventListener('mouseover',function(){
+    imgSololevel.src ="img/sololeveling2.jpg" })   
+imgSololevel.addEventListener('mouseout', function(){
+    imgSololevel.src ="img/sololeveling.jpg"       
 });
 
 
