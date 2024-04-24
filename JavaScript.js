@@ -162,7 +162,7 @@ function soloReview() {
     window.location.href ="reviews/Soloreview.html";
 }
 
-
+document.addEventListener("DOMContentLoaded", function() {
 /*
 Chang Images on Hover for the home page section 
 
@@ -260,4 +260,4 @@ imgKengan.addEventListener('mouseout', function(){
 imgKengan.src = "img/Kengan Ashura.jpg"            
 });          
 
-
+});
