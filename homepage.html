@@ -31,7 +31,7 @@
 
         <ul>
 
-            <li> <a href='homepage.html'> Home  </a> </li>
+            <li> <a href="homepage.html"> Home  </a> </li>
             <li> <a href='review.html'> Reviews  </a> </li>
             <li> <a href='recommendation.html'> Recommendations </a> </li>
             <li> <a href='animetriviagame.html'>  Games </a> </li>
@@ -43,23 +43,44 @@
 
        
 
-       <button class="but1"> Sign Up </button>
-       <button class="but2"> Login</button>
+      
 
     
     </nav>
 
     
 
-<!-- Carousel Section   -->
 
-    <section id="carousel">
-        <div class="carou"> 
-            <p> Anime top 10 Weekly</p>
 
-        </div>
+    <section class="Sectpop">
 
-    
+        
+        <h2 class="secthead"> Top Trending Anime this Week</h2>
+                         
+        <div class="carousel">
+
+            <div class="carousel-container">
+
+              <div class="slide" id="carouimage" onclick="jujutsukai()"><img src="img/carousel/Jujutsukaisencarou.jpg" alt="Jujutsu Kaisen Image">  </div>
+
+               <div class="slide" id="carouimage" onclick="sevendeadly()"> <img src="img/carousel/Sevendeadlysins-carou.jpg" alt="Sevendeadlysins Image">  </div>
+
+              <div class="slide" id="carouimage" onclick="tokoyo()"> <img src="img/carousel/Tokyo-revengers.jpg" alt="Tokyo-revengers Image">  </div>
+
+              <div class="slide" id="carouimage" onclick="seventimes()"> <img src="img/carousel/Seventimesloopcarou.jpg" alt="Seven times sloop Image">  </div>
+
+              <div class="slide" id="carouimage"  onclick="narutoship()"> <img src="img/carousel/Narutoshippudencarou.jpg" alt="Naruto Shippuden Image">  </div>
+
+            </div>
+
+            <button class="prev-btn">Previous</button>
+            <button class="next-btn">Next</button>
+             
+          </div>      
+                  
+               
+                    
+
     </section>
 
     
@@ -72,53 +93,56 @@
 
         <div class="gridpop">
 
-        <div class="pop1"> 
+        <div class="pop1" onclick="solo()"> 
 
-            <a class="poplink" href="/animepage/sololeveling.html">
-            <img class="popanime" src="img/Solo leveling.jpg"> 
-            <h2> Solo leveling</h2>
-        </a>    
-          
+            <img id="solol" class="popanime" src="img/Solo leveling.jpg"> 
+            <h2 class="aniheadings"> Solo leveling</h2>
+                 
         </div>
             
-           <div class="pop2"> 
-
-            <a class="poplink" href="/animepage/AOT.html">
-            <img class="popanime" src="img/Attack on titan.jpg"> 
-            <h2> Attack on titian</h2>
-           </a>
+           <div class="pop2" onclick="AOT()">       
+             
+            <img id="aot2"  class="popanime" src="img/Attack on titan.jpg"> 
+            <h2 class="aniheadings"> Attack on titian</h2>
+       
           
         </div>
 
-        <div class="pop3"> 
-            <a  class="poplink" href="/animepage/onepiece.html">
-            <img class="popanime" src="img/One piece.jpg"> 
+        <div class="pop3" onclick="onepiece()"> 
 
-            <h2> One piece</h2>
-        </a>
+          
+
+            <img id="onep"    class="popanime" src="img/One piece.jpg"> 
+
+            <h2 class="aniheadings"> One piece</h2>
+       
 
         </div>
 
-        <div class="pop4"> 
-            <a class="poplink"  href="/animepage/A.Diaries.html">
-            <img class="popanime" src="img/The Apothecary Diaries.jpg"> 
+        <div class="pop4" onclick="adaiaries()"> 
 
-            <h2> The Apothecary Diaries</h2>
-        </a>
+            <img id="adairy" class="popanime" src="img/The Apothecary Diaries.jpg"> 
+
+            <h2  class="aniheadings"> The Apothecary Diaries</h2>
+
+       
+
         </div>
 
-        <div class="pop5"> 
-            <a class="poplink" href="/animepage/DemonSlayer.html">
-            <img class="popanime" src="img/Demon Slayer.jpg"> 
+        <div class="pop5" onclick="demonslay()"> 
 
-            <h2> Demon Slayer </h2>
-            </a>
+            
+            <img id="demslay" class="popanime" src="img/Demon Slayer.jpg"> 
+
+            <h2 class="aniheadings"> Demon Slayer </h2>
+
+          
 
         </div>
 
     </div>
 
-    <button class="homebutton">  View More  </a> </button>
+    <button class="homebutton" onclick="Popular()">  View More  </a> </button>
 
     
     </section>
@@ -133,53 +157,54 @@
 
          <h2 class="secthead"> New Recommendation</h2>
     
-  <div class="gridpop">            
-        <div class="pop6"> 
+    <div class="gridpop">     
+
+        <div class="pop6" onclick="bluelock()"> 
             
-            <a class="poplink" href="/animepage/Blue Lock.html"> 
-            <img class="popanime" src="img/Blue Lock.jpeg"> 
-            <h2> Blue Lock</h2>
-        </a>  
+            
+            <img id="bluel" class="popanime" src="img/bluelock.jpeg"> 
+            <h2 class="aniheadings"> Blue Lock</h2>
+        
           
         </div>
 
-        <div class="pop7"> 
+        <div class="pop7" onclick="chainsaw()"> 
 
-            <a class="poplink" href="animepage/ChainsawMan.html"> 
-            <img class="popanime" src="img/Chainsaw man.jpg"> 
-            <h2> Chainsaw Man</h2>
-        </a>
+            
+            <img id="chainman" class="popanime" src="img/Chainsaw man.jpg"> 
+            <h2 class="aniheadings"> Chainsaw Man</h2>
+       
           
         </div>
 
-        <div class="pop8"> 
-            <a class="poplink" href="animepage/SpyxFamily.html"> 
-            <img class="popanime" src="img/spy-x-family.jpg"> 
+        <div class="pop8" onclick="spyx()"> 
+           
+            <img id="spyfam" class="popanime" src="img/spy-x-family.jpg"> 
 
-            <h2> Spy x Family</h2>
-        </a>
+            <h2 class="aniheadings"> Spy x Family</h2>
+        
         </div>
 
-        <div class="pop9"> 
-            <a class="poplink" href="animepage/MyHeroAcademia.html"> 
-            <img class="popanime" src="img/My hero academia.jpg"> 
+        <div class="pop9" onclick="myhero()"> 
+            
+            <img id="myheroacadem" class="popanime" src="img/myhero.jpg"> 
 
-            <h2> My Hero academia</h2>
-        </a>
+            <h2 class="aniheadings"> My Hero academia</h2>
+        
           
         </div>
 
-        <div class="pop10"> 
-            <a class="poplink" href="animepage/KenganAshura.html"> 
-            <img class="popanime" src="img/Kengan Ashura.jpg"> 
+        <div class="pop10" onclick="kengan()"> 
+          
+            <img id="kengan" class="popanime" src="img/Kengan Ashura.jpg"> 
 
-            <h2> Kengan Ashura</h2>
-        </a>
+            <h2 class="aniheadings"> Kengan Ashura</h2>
+        
         </div>
 
     </div>   
 
-     <button class="homebutton"> View More  </button> 
+     <button class="homebutton" onclick="recommend()"> View More  </button> 
 
         
     
@@ -187,65 +212,84 @@
 
   
 <!-- Latest Reviews  Section   -->
-    <section id="latestReview">
-        
-        
+    <section class="Sectpop">
 
-    
+        <h2 class="secthead"> Latest Reviews </h2>
+
+        <div class="latestflex">
+
+            <div class="lr1">
+                <img class="latestreviewimg"  src="img/aotfight.avif" alt="Attack on Titan Fight" onclick="aotreview()">
+                <div class="lrtext">
+                <h2 class="reviewhead aniheadings" onclick="aotreview()">Attack on Titan: The Battle of Heaven and Earth </h2>
+                <p> The decisive battle of attack on titan encapsulates 10+ years of brilliantly crafted anticipation and narrative excellence whilst audaciously 
+                    tackling issues that are even present in our own society today. 
+                    From the inception of the series, we had a clear understanding of who the heroes and villains were, or so we thought.  <span class="reviewhead" onclick="aotreview()"> Click to read more </span></p>
+                </div>
+            </div>
+
+
+                <div class="lr1"> 
+              <img class="latestreviewimg" src="img/Kimi ni todoke.jpeg" alt="Photo of Kimi Ni Todoke" onclick="kiminireview()"> 
+
+             <div class="lrtext">
+
+            <h2 class="reviewhead aniheadings" onclick="kiminireview()">Kimi ni Todoke Season 3 coming soon </h2>
+            <p> The first promotional video, key visual, and August global Netflix launch for Karuho Shiina's Kimi ni Todoke 
+                - From Me to you manga were unveiled on Thursday via... <span  class="reviewhead" onclick="kiminireview()">  Click to read more! </span> </p>
+            </div>
+        
+        </div>
+  
+        <div class="lr1">
+            <img class="latestreviewimg"  src="img/My-Hero-Academia-Deku-Bakugo-Shoto.jpg" alt="My Hero Photo" onclick="myheroreview()" >
+            <div class="lrtext">
+            <h2 class="reviewhead aniheadings" onclick="myheroreview()"> Crunchyroll is streaming My Hero Academia Season 7 during the spring anime season </h2>
+            <p> As the My Hero Academia anime returns with fresh episodes in the spring of 2024, the call for heroes has once again been issued! According to crunchy roll Four special episodes, 
+                featuring new scenes that set up the seventh season, will begin with My Hero Academia: Memories on April 6 at 2:30 a.m. <span> Click to read more </span onclick="myheroreview()"></p>
+            </div>
+        </div>
+
+  
+       
+        </div>
+
+
+        <button class="homebutton" onclick="review()">  View More  </button> 
+
+           
+          
     </section>
 
-
-<!-- 
-
-  Welcome side Side Banner  
-
-  <aside class="welcomSide"> 
-
-    <div class="insidewel"> 
-
-    <h1> New recommendation</h1>
-</div>
+ 
 
 
-Game Side Banner  
 
-<aside class="gameSide"> 
 
-    <h1> New recommendation</h1>
-
-    
-</aside> -->
 
 <!-- Footer   -->
 
     <footer id="footer"> 
 
-        <!-- <div id="footerlogocont"> 
 
-            <img class="footerlogo" src="img/logo.png"> 
-     -->
-        </div>
+    </div>
         
         <div class="footlist"> 
                         <ul>
-                <li> Contact US </li>
-                <li> About Us </li>
-                <li>Privacy  </li>
+                <a href="contactus.html"> <li> Contact US </li> </a>
+                <a href="aboutus.html"> <li> About Us </li> </a>
+               <a href="privacy.html">  <li>Privacy Policy </li> </a>
 
             </ul>
 
   
          </div>  
-
-         
-
-   
-          
+               
 
 
     </footer>
 
-
+    <script src="JavaScript.js"> </script>
     
 </body>
 </html>

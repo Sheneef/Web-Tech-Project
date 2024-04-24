@@ -20,6 +20,8 @@ body {
 #logo1 {    
     width: 120px;
     height: 80px;
+    position: relative;
+    right: 352px;
     
 }
 
@@ -30,7 +32,7 @@ body {
     background-color: #400C84;
     margin:0;  
     padding: 5px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 100%;
                       
@@ -60,28 +62,7 @@ body {
 }
 
 
-/* Navigation Bar Buttons */
 
-
-
-.but1{
-
-    border-radius: 40px;
-    width: 100px;
-    height: 40px;
-    margin: 30px;
-    background-color: black;
-    color: white;
-}
-
-.but2{
- border-radius: 40px;
-  width: 100px;
-  height: 40px;   
-  background-color: black;
-  color: white;
-  margin-right: 190px;
-}
 
 
 
@@ -90,26 +71,60 @@ body {
 
 
 
-        /* Carousel  */
-#carousel{
-    margin: 20px auto;
-    /* background:#593688;
-    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
+  /* Carousel  */
 
-    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
-    padding: 80px;
-    color: white;
+  .carousel {
+  position: relative;
+  margin: 0 30px;
+  overflow: hidden;
 }
+           
+   #carouimage{
+   width: 150px;
+   height: 700px;
+}
+                    
+  
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
+
+  
+  
 
 
 
-        /* Popular Anime Section and Review Sections  */
+        /* Popular Anime Section and Review Sections   */
 .Sectpop{
     margin: 30px 230px;
-    /* background:#593688;
-    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
-    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
-    padding: 5px;
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);   /* Code from https://cssgradient.io/ */
+    padding: 60px 0;
     color: white;
     text-align: center;
 }
@@ -134,7 +149,22 @@ body {
 .popanime{
     width: 200px;
     height: 250px;
+    transition: transform 0.3s ease-in-out;
   
+}
+
+.popanime:hover{
+    transform: scale(1.1);
+}
+
+.aniheadings{
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+.aniheadings:hover{
+    cursor: default;
+    background-color: black;
 }
 
 .poplink{
@@ -142,7 +172,10 @@ body {
     color: white;
 }
 
-                        /* Home page button Code from Gradient with minor modifications  */
+
+
+
+                        /* Home page button Code from Code from https://cssgradient.io/  with minor modifications  */
          
 .homebutton {
     background-image: linear-gradient(to right, #200122 0%, #6f0000  51%, #200122  100%);
@@ -167,16 +200,49 @@ body {
     text-decoration: none;
   }
  
+                /*  Stying the Footer  */
+
+#footer{
+    
+    background-color: #400C84;
+    align-items: center;
+    
+}
+
+
+.footlist{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;   
+       
+}
+
+.footlist ul{
+    list-style: none;
+    padding: 20px;
+    display: flex;
+        
+}
+
+.footlist li{
+    padding: 10px;
+}
+
+
+.footlist a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
   
-/* Styling for each anime pages */
+/* Styling for anime pages */
 
 
   .animepages{ 
     margin: 10px 30px;
-    /* background-color: #a584bd;
-    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); 
-    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%); */
     background:#ece4f5;
     padding: 10px;
     color:black;
@@ -238,8 +304,30 @@ body {
     
 }
 
+/* Review Page Styling */
+
+.review-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   
+}
+
+.reviewflx{
+    display: flex;
+    justify-content: center; 
+   
+}     
 
 
+.reviewimg{
+    width: 400px;
+    height: 255px;
+}
+
+
+
+        /* Latest Review  home Page Styling */
 
 #latestReview{
 
@@ -249,49 +337,191 @@ body {
     color: white;
 
 }
-
-  
-
-
-           /* Footer  */
-
-#footer{
-    margin: 0;
-    background-color: #400C84;
-    align-items: center;
+.latestreviewimg{
+    width: 300px;
+    height: 200px;
+    margin: 30px;
+    transition: transform 0.3s ease-in-out;
 }
 
-#footerlogocont{
-    margin: 0 40px;
-}
+.latestreviewimg:hover{
+    transform: scale(1.1);
 
-.footerlogo{
-    width: 120px;
-    height: 80px;
+}
+.latestflex{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.lr1{
+    display: flex;
     
 }
 
-
-.footlist{
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    color: white;
-       
+.lrtext{
+   margin-right: 100px;
+   font-size: 18px;
+    
 }
 
-.footlist ul li{
-    list-style: none;
+.reviewhead{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+                /* Latest Review content Page Styling */
+
+.reviewpage{
+    background-color:#ece4f5;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 5px 100px;
+}
+
+.imgreview{
+    width: 520px;
+  height: 320px;
+  margin-left: 460px;
+}
+
+
+.imginside{
+    width: 520px;
+  height: 320px;
+  margin-left: 66px
+}
+
+
+.photocaption{
+   margin: 20px 500px;
+}
+
+.reviewcontent {
+    text-align: center;
+}
+
+.reviewcontent p{
+    text-align: left;
+    font-size: 20px;
+}
+
+
+
+/* Anime Trivia Page Styling */
+
+
+ .quiz-outsidecontainer{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+        
+}
+
+.container{
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    width: 600px; 
+    overflow: hidden;
+    padding-top: 30px;
+     
+} 
+
+.game-image{
+    width: 300px;
+    height: 200px;
+}
+
+.q-header{
     padding: 10px;
 }
-           
+
+.q-header h2{
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.q-header ul li{
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.quiz-button{
+    background-color: #a374d9;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    display: block;
+    padding: 25px;
+
+}
+
+.quiz-button:hover{
+    background-color: #400C84;
+}
 
 
 
 
+/* Anime Ranking Page Styling */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    background-color: black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tbimg{
+    max-width: 100px;
+    max-height: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tbimg:hover{
+    transform: scale(2.2);
+}
 
 
+tr:nth-child(even){background-color: #400C84;} /* Code From w3schools */
 
+
+tr:hover{ 
+    background-color: #5f2a87;
+
+}
+
+ /*  Stying the Privacy and about us page  */
+  
+.privacytext{
+    padding: 10px;
+    margin: 50px;
+    text-align: left;
+    font-size: 20px;
+}
+.privacytext a{
+    text-decoration: none;
+    color: white;
+}
+
+#aboutusimg{
+    width: 400px;
+    height: 300px;
+
+}
 
 
 
@@ -299,14 +529,12 @@ body {
 
 #contactinfo{    
     margin: 50px;
-    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%); /* Code From */
     text-align: center;
     color: white;
     padding-bottom: 150px;
     
 }
-
-
 
 .formhead{
     margin-bottom: 50px;
@@ -350,8 +578,6 @@ body {
     
 }
 
-
-
 .messagebox {
     display: flex;
     flex-direction: column;
@@ -367,9 +593,7 @@ body {
 }
 
 
-
-
-/* Contact Us form button Code from Gradient Website  */
+/* Contact Us form button Code from https://cssgradient.io/  */
 .formsubmit{          
     
     background-image: linear-gradient(to right, #1D2B64 0%, #F8CDDA  51%, #1D2B64  100%);
@@ -390,7 +614,6 @@ body {
     color: #fff;
     text-decoration: none;
   }
-
 
 
 
