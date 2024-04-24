@@ -186,7 +186,7 @@ Chang Images on Hover for the home page section
 imgSololevel.addEventListener('mouseover',function(){
     imgSololevel.src ="img/sololeveling2.jpg" })   
 imgSololevel.addEventListener('mouseout', function(){
-    imgSololevel.src ="img/Solo leveling.jpg"       
+    imgSololevel.src ="img/sololeveling.jpg"       
 });
 
 
