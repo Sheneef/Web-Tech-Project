@@ -24,6 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
       currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
       showSlide(currentIndex);
     }
+
+       // Automatic Slide Change
+       function startSlideInterval() {
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+
+    //Slide Buttons
+    
   
     prevBtn.addEventListener("click", function() {
       prevSlide();
@@ -35,11 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
       clearInterval(slideInterval); 
     });
   
-    // Automatic Slide Change
-    function startSlideInterval() {
-      slideInterval = setInterval(nextSlide, intervalTime);
-    }
-  
+ 
     startSlideInterval(); 
   
     // Pause on hover
@@ -138,6 +142,45 @@ function recommend() {
 function review() {
     window.location.href = "review.html";
 }
+
+
+//Review Section on Home page 
+
+
+function aotreview() {
+
+      window.location.href = "reviews/aotreview.html";
+    
+
+}
+
+function kiminireview() {
+    window.location.href = "reviews/kiminidoke.html";
+}
+
+function myheroreview() {
+    window.location.href = "reviews/myHerocoming.html";
+}
+
+function Kaisenreview() {
+    window.location.href ="reviews/jujutsureview.html";
+}
+
+function soloReview() {
+    window.location.href ="reviews/Soloreview.html";
+}
+
+function onepiecereview(){
+    window.location.href ="reviews/onepiecelatest.html"
+}
+
+
+
+
+/*
+Chang Images on Hover 
+
+*/
 
  
 document.addEventListener("DOMContentLoaded", function() {
